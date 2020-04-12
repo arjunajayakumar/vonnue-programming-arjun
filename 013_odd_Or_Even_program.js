@@ -1,11 +1,14 @@
-// program to check whether the entered number is even or  odd
-const readlineSync = require('readline-sync');
-const number = readlineSync.question(' Enter the number ');
+// Program to find Even and Odd number
+const readline = require("readline-sync");
 
-if ((number % 2) === 0) {
+const oddEven = (num) => {
+    if ((num % 2) === 0) {
+        console.log("The number is Even");
+    }
+    else {
+        console.log("The number is odd");
+    }
+}
 
-    console.log(" The number is Even ")
-}
-else {
-    console.log(" The number is Odd ")
-}
+const num = readline.question('Enter the number ; ');
+oddEven(num);
