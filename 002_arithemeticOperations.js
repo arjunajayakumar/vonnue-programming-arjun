@@ -29,8 +29,7 @@ const subtraction = (numb1, numb2) => {
 const greaterthan = (numb1, numb2) => {
     if (numb1 > numb2) {
         console.log(numb1, "is greater");
-    }
-    else {
+    } else {
         console.log(numb2, "is greater");
     }
 }
@@ -39,6 +38,8 @@ const greaterthan = (numb1, numb2) => {
 const lessthan = (numb1, numb2) => {
     if (numb1 < numb2) {
         console.log(numb1, "is lesser");
+    } else {
+        console.log(numb2, "is lesser");
     }
 }
 
@@ -46,8 +47,7 @@ const lessthan = (numb1, numb2) => {
 const equalto = (numb1, numb2) => {
     if (numb1 === numb2) {
         console.log(numb1, "and", numb2, "are equal");
-    }
-    else {
+    } else {
         console.log(numb1, "and", numb2, "are not equal");
     }
 }
