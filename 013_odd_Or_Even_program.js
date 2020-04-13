@@ -4,8 +4,7 @@ const readline = require("readline-sync");
 const oddEven = (num) => {
     if ((num % 2) === 0) {
         console.log("The number is Even");
-    }
-    else {
+    } else {
         console.log("The number is odd");
     }
 }
