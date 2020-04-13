@@ -9,14 +9,17 @@ const addition = (numb1, numb2) => {
 const multiplication = (numb1, numb2) => {
     console.log("Product :", (numb1 * numb2));
 }
+
 // division
 const division = (numb1, numb2) => {
     console.log("Division : ", (numb1 / numb2));
 }
+
 // modulus
 const modulus = (numb1, numb2) => {
     console.log("Modulus : ", (numb1 % numb2));
 }
+
 // subtraction
 const subtraction = (numb1, numb2) => {
     console.log("Difference : ", (numb1 - numb2));
@@ -38,6 +41,7 @@ const lessthan = (numb1, numb2) => {
         console.log(numb1, "is lesser");
     }
 }
+
 // equal to
 const equalto = (numb1, numb2) => {
     if (numb1 === numb2) {
