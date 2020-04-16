@@ -9,5 +9,5 @@ const oddEven = (num) => {
     }
 }
 
-const num = readline.question('Enter the number ; ');
+const num = readline.question('Enter the number : ');
 oddEven(num);
