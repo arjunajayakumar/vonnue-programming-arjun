@@ -1,7 +1,6 @@
-const readline = require('readline-sync');
-// 7. Multiple each element of an array with a constant and print the result
+// 7. Multiply each element of an array with a constant and print the result
 
-const arrayMultiply = (elements) => {
+const arrayMultiply = (elements, constant) => {
     let arrayLength = elements.length;
     let product = [];
     for (let i = 0; i < arrayLength; i++) {
@@ -12,4 +11,4 @@ const arrayMultiply = (elements) => {
 
 let elements = [1, 2, 5, 8, 9, 4, 6];
 const constant = 5;
-arrayMultiply(elements);
+arrayMultiply(elements, constant);
