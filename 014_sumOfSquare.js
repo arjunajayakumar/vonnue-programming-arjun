@@ -2,8 +2,8 @@
 
 const sumOfSquare = (number) => {
 
-    for (let i = 0; i <= number / 5; i++) {
-        for (let j = 0; j <= number / 5; j++) {
+    for (let i = 0; i <= number; i++) {
+        for (let j = 0; j <= number; j++) {
             if ((i * i) + (j * j) === number) {
                 return true;
             } 
@@ -12,5 +12,5 @@ const sumOfSquare = (number) => {
     return false;
 }
 
-let number = 3;
+let number = 847;
 console.log(sumOfSquare(number));
