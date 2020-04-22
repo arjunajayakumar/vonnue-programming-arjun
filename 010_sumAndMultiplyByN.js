@@ -3,7 +3,7 @@ computing the sum and computing the product of 1,…,n. */
 
 const operation = (choice) => {
 	if (choice == "m") {
-		MultiplyByN(number);
+		multiplyByN(number);
 	} else {
 		sumByN(number);
 	}
@@ -19,7 +19,7 @@ const sumByN = (number, s) => {
 	console.log("Sum : ", sum);
 }
 // multiply
-const MultiplyByN = (number, m) => {
+const multiplyByN = (number, m) => {
 	let i = 1;
 	let product = 1;
 	while (i <= number) {
