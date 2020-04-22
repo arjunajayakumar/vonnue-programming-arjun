@@ -1,8 +1,8 @@
 // 23. Write a program to check a number is positive or negative
-const positiveOrNegative = () => {
-  let number = '-8';
-  sign = Math.sign(number);
-  console.log(sign);
+const positiveOrNegative = (number) => {
+  let sign = Math.sign(number);
+  console.log(`Sign :`, sign);
 }
 
-positiveOrNegative();
+let number = '-8';
+positiveOrNegative(number);
