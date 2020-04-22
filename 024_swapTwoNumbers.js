@@ -1,7 +1,5 @@
-// 23. Write a program to Swap two numbers without third variable
-const swap = () => {
-  let firstNumber = 6;
-  let secondNumber = 5;
+// 24. Write a program to Swap two numbers without third variable
+const swap = (firstNumber, secondNumber) => {
   firstNumber = firstNumber + secondNumber;
   secondNumber = firstNumber - secondNumber;
   firstNumber = firstNumber - secondNumber;
@@ -9,4 +7,6 @@ const swap = () => {
   console.log('Secondnumber', secondNumber);
 }
 
-swap();
+let firstNumber = 6;
+let secondNumber = 5;
+swap(firstNumber, secondNumber);
