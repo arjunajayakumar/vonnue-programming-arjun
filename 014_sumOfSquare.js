@@ -2,14 +2,14 @@
 
 const sumOfSquare = (number) => {
 
-    for (let i = 0; i <= number; i++) {
-        for (let j = 0; j <= number; j++) {
-            if ((i * i) + (j * j) === number) {
-                return true;
-            } 
-        }
+  for (let i = 0; i <= number; i++) {
+    for (let j = 0; j <= number; j++) {
+      if ((i * i) + (j * j) === number) {
+        return true;
+      }
     }
-    return false;
+  }
+  return false;
 }
 
 let number = 847;
