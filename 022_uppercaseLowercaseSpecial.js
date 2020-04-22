@@ -1,5 +1,6 @@
 // 22. Write a program to check Uppercase, Lowercase or special character
-const upperLowerSpecialCharacter = (character, asciiValue) => {
+const upperLowerSpecialCharacter = (character) => {
+  let asciiValue = character.charCodeAt(0);
   if (asciiValue >= 65 && asciiValue <= 90) {
     console.log("Uppercase");
   } else if (asciiValue >= 97 && asciiValue <= 122) {
@@ -10,5 +11,4 @@ const upperLowerSpecialCharacter = (character, asciiValue) => {
 }
 
 let character = '|';
-let asciiValue = character.charCodeAt(0);
-upperLowerSpecialCharacter(character, asciiValue);
+upperLowerSpecialCharacter(character);
