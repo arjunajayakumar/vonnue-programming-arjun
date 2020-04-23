@@ -4,5 +4,5 @@ const circleArea = (radius) => {
   console.log('Area :', area);
 }
 
-let radius = 4;
-circleArea(radius);
+let radius;
+circleArea(4);
