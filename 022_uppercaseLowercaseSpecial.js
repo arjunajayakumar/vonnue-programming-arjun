@@ -10,5 +10,5 @@ const upperLowerSpecialCharacter = (character) => {
   }
 }
 
-let character = '|';
-upperLowerSpecialCharacter(character);
+let character;
+upperLowerSpecialCharacter('/');
