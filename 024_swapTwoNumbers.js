@@ -7,5 +7,4 @@ const swap = (firstNumber, secondNumber) => {
   console.log('Secondnumber', secondNumber);
 }
 
-let firstNumber, secondNumber;
 swap(5, 10);
