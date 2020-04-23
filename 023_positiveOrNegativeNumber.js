@@ -4,5 +4,4 @@ const positiveOrNegative = (number) => {
   console.log(`Sign :`, sign);
 }
 
-let number;
 positiveOrNegative(-8);
