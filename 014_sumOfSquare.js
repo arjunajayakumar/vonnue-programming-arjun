@@ -12,5 +12,4 @@ const sumOfSquare = (number) => {
   return false;
 }
 
-let number;
-console.log(sumOfSquare(847));
+console.log(sumOfSquare(50));
