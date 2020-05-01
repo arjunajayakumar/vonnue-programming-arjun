@@ -5,10 +5,8 @@ const primeNumber = (number) => {
     if ((number % i) === 0) {
       primeNumber = false;
       return false;
-
     }
   }
-
   return true;
 }
 
@@ -22,7 +20,6 @@ const primeNumberAsSum = (number) => {
             console.log(i, '+', j);
             return true;
           }
-
         }
       }
     }
