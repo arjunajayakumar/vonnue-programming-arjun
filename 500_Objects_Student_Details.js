@@ -159,7 +159,7 @@ const averageOfGivenSubject = (subjectName) => {
   return Math.round(average);
 }
 
-/* 10. Sort and display the list of students in any order - ordered by name, mark etc */
+// 10. Sort and display the list of students in any order - ordered by name, mark etc 
 // a. Sort by Name
 classBtech.students.sort(sortByStudentName = (a, b) => {
   if (a.name < b.name) {
@@ -207,17 +207,17 @@ const sortByName = (subjectMark, subject) => {
   }
 }
 
-// console.log(addStudent('Arjun', 108));
-// console.log(addMark('computer', 65, 105));
+console.log(addStudent('Arjun', 108));
+console.log(addMark('computer', 65, 105));
 addMarksForAsubject();
-// console.log(editMark('English', 97, 106));
-// console.log(changeClassTeacher('class A', 'Aswathy'));
-// console.log(removeStudent(106));
-// deleteSubjectEntry('Physics');
-// topperOfAclass('Maths');
-// console.log(averageOfGivenSubject('English'));
-// console.log('Sort by Name', classBtech.students);
-// sortByMark('Maths');
+console.log(editMark('English', 97, 106));
+console.log(changeClassTeacher('class A', 'Aswathy'));
+console.log(removeStudent(106));
+deleteSubjectEntry('Physics');
+topperOfAclass('Maths');
+console.log(averageOfGivenSubject('English'));
+console.log('Sort by Name', classBtech.students);
+sortByMark('Maths');
 
 
 
