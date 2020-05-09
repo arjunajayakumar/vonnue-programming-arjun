@@ -28,14 +28,12 @@ let classBtech = {
         { subject: 'English', mark: 80 },
         { subject: 'Maths', mark: 92 },
         { subject: 'Physics', mark: 61 }
-
       ]
     }
-
   ]
 }
 
-// Add student with name and ID
+// 1. Add student with name and ID
 const addStudent = (studentName, studentID) => {
   let studentObject = {
     name: studentName,
@@ -45,7 +43,7 @@ const addStudent = (studentName, studentID) => {
   return classBtech.students;
 }
 
-// Enter Mark for a student
+// 2. Enter Mark for a student
 const addMark = (subjectName, subjectMark, studentID) => {
   let markObject = {
     subject: subjectName,
@@ -54,9 +52,9 @@ const addMark = (subjectName, subjectMark, studentID) => {
   let index = classBtech.students.findIndex(name => name.id === studentID);
   classBtech.students[index].marks.push(markObject);
   return classBtech.students[index].marks;
-
 }
 
+// 3. Enter mark for a subject for multiple students
 const addMarksForAsubject = () => {
   let subject = ['computer'];
   let marks = [67, 48];
@@ -73,13 +71,13 @@ const addMarkforMultipleStudents = (subjectName, subjectMark, studentID) => {
     mark: subjectMark
   }
   let index = classBtech.students.findIndex(student => student.id === parseInt(studentID));
-  if (classBtech.students[index].id === studentID){
+  if (classBtech.students[index].id === studentID) {
     classBtech.students[index].marks.push(markObject);
     console.log(classBtech.students[index]);
-  }  
+  }
 }
 
-//Edit mark for a particular subject of a student
+// 4. Edit mark for a particular subject of a student
 const editMark = (subjectName, mark, studentID) => {
   let studentIndex = classBtech.students.findIndex(name => name.id = studentID);
   let marksIndex = classBtech.students[studentIndex].marks.findIndex(mark => mark.subject === subjectName);
@@ -87,7 +85,7 @@ const editMark = (subjectName, mark, studentID) => {
   return classBtech.students[studentIndex].marks[marksIndex];
 }
 
-// // Change the class teacher of a class
+// 5. Change the class teacher of a class
 const changeClassTeacher = (className, teacher) => {
   if (classBtech.class === className) {
     classBtech.teacherName = teacher;
@@ -95,7 +93,7 @@ const changeClassTeacher = (className, teacher) => {
   return classBtech;
 }
 
-// Remove a student from a class
+// 6. Remove a student from a class
 const removeStudent = (studentID) => {
   for (let i = 0; i < classBtech.students.length; i++) {
     if (classBtech.students[i].id === parseInt(studentID)) {
@@ -105,7 +103,7 @@ const removeStudent = (studentID) => {
   return classBtech;
 }
 
-// Delete a subject entry from every students
+// 7. Delete a subject entry from every students
 const deleteSubjectEntry = (subjectName) => {
   let filteredArray = [];
   for (let i = 0; i < classBtech.students.length; i++) {
@@ -116,7 +114,7 @@ const deleteSubjectEntry = (subjectName) => {
       }
     }
     console.log(classBtech.students[i]);
-  } 
+  }
 }
 
 // 8.  Find the topper of a class given a subject
@@ -145,7 +143,7 @@ const topperOfAclass = (subjectName) => {
   }
 }
 
-//Find the average mark for a given subject
+// 9. Find the average mark for a given subject
 let sum = 0;
 let count = 0;
 const averageOfGivenSubject = (subjectName) => {
@@ -161,8 +159,8 @@ const averageOfGivenSubject = (subjectName) => {
   return Math.round(average);
 }
 
-/* Sort and display the list of students in any order - ordered by name, mark etc */
-// Sort by Name
+/* 10. Sort and display the list of students in any order - ordered by name, mark etc */
+// a. Sort by Name
 classBtech.students.sort(sortByStudentName = (a, b) => {
   if (a.name < b.name) {
     return -1;
@@ -174,7 +172,7 @@ classBtech.students.sort(sortByStudentName = (a, b) => {
 }
 );
 
-// Sort by mark
+// b. Sort by mark
 const sortByMark = (subjectName) => {
   let sortedStudentArray = [];
   let marksArray = [];
@@ -209,17 +207,17 @@ const sortByName = (subjectMark, subject) => {
   }
 }
 
-console.log(addStudent('Arjun', 108));
-console.log(addMark('computer', 65, 105));
+// console.log(addStudent('Arjun', 108));
+// console.log(addMark('computer', 65, 105));
 addMarksForAsubject();
-console.log(editMark('English', 97, 106));
-console.log(changeClassTeacher('class A', 'Aswathy'));
-console.log(removeStudent(106));
-deleteSubjectEntry('Physics');
-topperOfAclass('Maths');
-console.log(averageOfGivenSubject('English'));
-console.log('Sort by Name', classBtech.students);
-sortByMark('Maths');
+// console.log(editMark('English', 97, 106));
+// console.log(changeClassTeacher('class A', 'Aswathy'));
+// console.log(removeStudent(106));
+// deleteSubjectEntry('Physics');
+// topperOfAclass('Maths');
+// console.log(averageOfGivenSubject('English'));
+// console.log('Sort by Name', classBtech.students);
+// sortByMark('Maths');
 
 
 
